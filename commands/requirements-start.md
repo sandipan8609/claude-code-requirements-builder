@@ -11,7 +11,7 @@ Begin gathering requirements for: $ARGUMENTS
    - 00-initial-request.md with the user's request
    - metadata.json with status tracking
 4. Read and update requirements/.current-requirement with folder name
-5. Use mcp__repomap__analyze_codebase to understand overall structure:
+5. Use mcp__RepoPrompt__get_file_tree to understand overall structure:
    - Get high-level architecture overview
    - Identify main components and services
    - Understand technology stack
