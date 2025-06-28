@@ -11,7 +11,7 @@ Begin gathering requirements for: $ARGUMENTS
    - 00-initial-request.md with the user's request
    - metadata.json with status tracking
 4. Read and update requirements/.current-requirement with folder name
-5. Use mcp__RepoPrompt__get_file_tree to understand overall structure:
+5. Use mcp__RepoPrompt__get_file_tree (if available) to understand overall structure:
    - Get high-level architecture overview
    - Identify main components and services
    - Understand technology stack
@@ -31,8 +31,8 @@ Begin gathering requirements for: $ARGUMENTS
 
 ### Phase 3: Targeted Context Gathering (Autonomous)
 7. After all discovery questions answered:
-   - Use mcp__RepoPrompt__search to find specific files based on discovery answers
-   - Use mcp__RepoPrompt__set_selection and read_selected_files to batch read relevant code
+   - Use mcp__RepoPrompt__search (if available) to find specific files based on discovery answers
+   - Use mcp__RepoPrompt__set_selection and read_selected_files (if available) to batch read relevant code
    - Deep dive into similar features and patterns
    - Analyze specific implementation details
    - Use WebSearch and or context7 for best practices or library documentation
@@ -97,6 +97,7 @@ Begin gathering requirements for: $ARGUMENTS
 - Stay focused on requirements (no implementation)
 - Use actual file paths and component names in detail phase
 - Document WHY each default makes sense
+- Use tools available if recommended ones aren't installed or available
 
 ## Metadata Structure:
 ```json
